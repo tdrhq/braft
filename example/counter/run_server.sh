@@ -59,7 +59,6 @@ fi
 
 
 export TCMALLOC_SAMPLE_PARAMETER=524288
-echo here $FLAGS_server_num
 
 for ((i=0; i<$FLAGS_server_num; ++i)); do
     mkdir -p runtime/$i
