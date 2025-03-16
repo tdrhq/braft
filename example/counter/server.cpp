@@ -394,10 +394,10 @@ int main(int argc, char* argv[]) {
         }
                          
     } else {
-    if (server.Start(FLAGS_port, NULL) != 0) {
-        LOG(ERROR) << "Fail to start Server";
-        return -1;
-    }
+        if (server.Start(FLAGS_port, NULL) != 0) {
+            LOG(ERROR) << "Fail to start Server";
+            return -1;
+        }
     }
 
     // It's ok to start Counter;
