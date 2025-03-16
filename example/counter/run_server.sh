@@ -37,9 +37,9 @@ eval set -- "${FLAGS_ARGV}"
 # The alias for printing to stderr
 alias error=">&2 echo counter: "
 
-# hostname prefers ipv6
 if [ "$FLAGS_ip" = "" ] ; then
-IP=`hostname -i | awk '{print $NF}'`
+    # hostname prefers ipv6
+    IP=`hostname -i | awk '{print $NF}'`
 else
     IP=$FLAGS_ip
 fi
