@@ -57,7 +57,6 @@ if [ "$FLAGS_clean" == "0" ]; then
     rm -rf runtime
 fi
 
-
 export TCMALLOC_SAMPLE_PARAMETER=524288
 
 for ((i=0; i<$FLAGS_server_num; ++i)); do
